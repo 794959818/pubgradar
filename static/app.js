@@ -132,6 +132,7 @@ vapp = new Vue({
       if (this.showArmor3) {
         flags |= 0b00000000000000000000000010000000
       }
+      
       if (this.showHead3) {
         flags |= 0b00000000000000000000000000000010
       }
