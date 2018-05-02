@@ -7,7 +7,6 @@ const appData = {
   safe: [-1, -1, 0],
   poison: [-1, -1, 0],
 
-  showingPlayers: new Map(), // guid -> obj { loc: team: kills: name: guid: friend: dead: }, replicate the server data.
   playerFeatures: new Map(), // guid -> ol.Feature
 
   showingAPawns: new Map(), // guid -> obj { loc, guid, owner, T }, replicate server data
@@ -682,18 +681,7 @@ const renderMap = () => {
     } else { // enemy
       if (playerObj.team) {
         label = `${playerObj.team}`
-      } else if (playerObj.name) {
-        label = playerObj.name
-      } else {
-        label = `<${playerObj.name}>`
-      }
-      if (playerObj.kills) {
-        label += ` |杀:${playerObj.kills}|`
-      }
-    }
-    if (playerObj.health != null) {
-      label += ` |血:${Math.floor(playerObj.health)}|`
-    }
+      } else if (playerObj.name)
     feature.set('_label', label)
     // re-add should be fine
     playerSource.addFeature(feature)
