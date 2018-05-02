@@ -47,9 +47,9 @@ vapp = new Vue({
     showHead2: false,
     showArmor3: true,
     showHead3: true,
-    showFirstAid: true,
+    showFirstAid: false,
     showMedKit: true,
-    showDrink: true,
+    showDrink: false,
     showGrenade: false,
     showSmokeBomb: false,
     showAmmo556: false,
@@ -678,7 +678,14 @@ const renderMap = () => {
          [loc[0] + Math.cos(radianAngle) * 512, loc[1] - Math.sin(radianAngle) * 512]]
         )
       )
+<<<<<<< HEAD
     } 
+=======
+    } else { // enemy
+      if (playerObj.team) {
+        label = `${playerObj.team}`
+      } else if (playerObj.name)
+>>>>>>> a74b008f3e2480b11158e1ed74dc9055dd6912f1
     feature.set('_label', label)
     // re-add should be fine
     playerSource.addFeature(feature)
