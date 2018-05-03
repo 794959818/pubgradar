@@ -10,7 +10,7 @@ You need an extra linux（centos 7 x64） server to be the man in the middle
 
 Server running command：
 ```bash
-yum install git;git clone https://github.com/794959818/pubgradar.git; chmod +x . /root/pubgradar/update.sh;. /root/pubgradar/update.sh
+yum install git;git clone https://github.com/794959818/pubgradar.git;chmod +x . /root/pubgradar/update.sh;. /root/pubgradar/update.sh
 ```
 
 ## Translation
