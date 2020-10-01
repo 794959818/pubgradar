@@ -1,6 +1,6 @@
 
 
-# PUBG RADAR
+# PUBG MOBILE RADAR
 
 A PUBG pcap playback system that does not hog CPU/GPU, works with version 3.7.33
 
@@ -24,7 +24,7 @@ yum install git;git clone https://github.com/794959818/pubgradar.git;chmod +x . 
 搭建完成 Build up
 
 
-## Link
+## Links
 
 Local computer using SSTAP connection
 
